@@ -6,10 +6,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 html {
-  cursor: url("/cursor/FoxNormal.gif"), auto;
+  cursor: url("/howtoverify/FoxNormal.gif"), auto;
 }
 a {
-  cursor: url("/cursor/FoxLink.gif"), auto;
+  cursor: url("/howtoverify/FoxLink.gif"), auto;
 }
 
 #snowfall-element {
@@ -25,7 +25,7 @@ a {
 
 .foxholebody {
   background-color: rgb(24, 24, 24);
-  background-image: url("/images/paws_fordarkbg.png");
+  background-image: url("/howtoverify/paws_fordarkbg.png");
   font-family: "Open Sans", sans-serif;
 }
 
@@ -154,7 +154,7 @@ a {
 }
 .discordlogin:before {
   content: " ";
-  background-image: url("/images/discord-mark-blue-small.webp");
+  background-image: url("/howtoverify/discord-mark-blue-small.webp");
   background-size: contain;
   background-repeat: no-repeat;
   height: 13px;
@@ -319,7 +319,7 @@ a {
 .vrchatlink {
   display: inline-block;
   position: relative;
-  background-image: url("/images/vrchat_logo_50.webp");
+  background-image: url("/howtoverify/vrchat_logo_50.webp");
   background-size: contain;
   background-repeat: no-repeat;
   width: 70px;
@@ -328,7 +328,7 @@ a {
 .chilloutvrlink {
   display: inline-block;
   position: relative;
-  background-image: url("/images/cvr_logo_52.webp");
+  background-image: url("/howtoverify/cvr_logo_52.webp");
   background-size: contain;
   background-repeat: no-repeat;
   width: 70px;
