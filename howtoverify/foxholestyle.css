@@ -1,0 +1,900 @@
+/* DEFAULT COLORS */
+/*
+    color: #cdcdcd;
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+html {
+  cursor: url("/cursor/FoxNormal.gif"), auto;
+}
+a {
+  cursor: url("/cursor/FoxLink.gif"), auto;
+}
+
+#snowfall-element {
+  position: fixed;
+  z-index: 52;
+  background: rgba(0,0,0,0);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.foxholebody {
+  background-color: rgb(24, 24, 24);
+  background-image: url("/images/paws_fordarkbg.png");
+  font-family: "Open Sans", sans-serif;
+}
+
+.content-wrap {
+  max-width: 1400px;
+  margin: 20px auto;
+}
+
+.topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.topline_mobile {
+  /* height: 72px; */
+  background-color: #101010;
+  z-index: 56;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+}
+.topline_mobile .menuicon {
+  fill: #fff;
+}
+.topline_mobile .nav-link {
+  font-weight: bold;
+}
+.topline_mobile .navbar-toggler {
+  position: fixed;
+  right: 13px;
+  top: 5px;
+  border: none;
+}
+.topline_mobile .navbar-toggler .navbar-toggler-icon {
+  width: 2.8em;
+  height: 3.8em;
+}
+.fhlogo a .logotext {
+  position: relative;
+  color: #cdcdcd;
+  line-height: 51px;
+  font-size: 51px;
+}
+.fhlogo a .logosubtext {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0;
+  left: 2px;
+  top: 62px;
+  width: 400px;
+  line-height: 16px;
+  color: #cdcdcd;
+}
+.fhlogo a {
+  letter-spacing: -3px;
+  font-weight: 800;
+  vertical-align: middle;
+  color: #444;
+  transform: scale(1.3);
+  text-decoration: none;
+}
+.topline_mobile .fhlogo a .logotext {
+  line-height: 32px;
+  font-size: 32px;
+}
+.topline_mobile .fhlogo a .logosubtext {
+  font-size: 13px;
+  top: 40px;
+}
+.fhlogo a:hover {
+  color: #444;
+}
+.fhlogo a img {
+  transform: scale(1);
+  transition: 0.25s ease-in-out;
+}
+.fhlogo a:hover img {
+  transform: scale(1.1);
+}
+.topmenu ul {
+  list-style: none;
+  padding-left: 0;
+}
+.topmenu ul li {
+  display: inline-block;
+  margin: 0 6px;
+  border-radius: 5px;
+  background-color: #333;
+  transform: scale(1) rotate(0);
+  transition: 0.25s ease-in-out;
+}
+.topmenu ul li a svg {
+  vertical-align: sub;
+}
+.topmenu ul li a {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  padding: 6px 10px;
+  color: #ccc;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 40px;
+}
+.topmenu ul li:hover {
+  transform: scale(1.05) rotate(2deg);
+  background-color: #444;
+}
+.topmenu ul li:hover a {
+  color: #ff8d00;
+}
+.topmenu ul li a svg .menuicon {
+  fill: #ccc;
+}
+.topmenu ul li:hover a svg .menuicon {
+  fill: #ff8d00;
+}
+
+.discordlogin {
+  padding-left: 15px;
+  position: relative;
+}
+.discordlogin:before {
+  content: " ";
+  background-image: url("/images/discord-mark-blue-small.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 13px;
+  width: 13px;
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+
+.page-content {
+  background: rgba(34 34 34 / 80%);
+  border-radius: 6px;
+  box-shadow: 0 3px 0 0 rgb(0 0 0 / 5%);
+  padding: 2em;
+  transition: background 0.2s;
+  color: #cdcdcd;
+}
+.page-content a:not(.btn) {
+  color: #FFC56E;
+  transition: 0.2s;
+}
+.page-content a:not(.btn):hover {
+  color: #24fd3f;
+}
+.verflink {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4 {
+  font-weight: 700;
+  color: #f08400;
+}
+.page-content .sitedescription {
+  color: #cdcdcd;
+  font-size: 1.2em;
+}
+.mainpagelayout {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mainpagelayout .mp_left {
+  flex-basis: 75%;
+  padding-right: 2%;
+}
+.mainpagelayout .mp_right {
+  flex-basis: 25%;
+}
+.patreonsblock ul {
+  list-style: none;
+  padding-left: 0;
+}
+.patreonsblock ul li {
+  margin-bottom: 5px;
+  border-radius: 4px;
+  background-color: #101010;
+  box-shadow: 1px 1px 4px 0 #000000;
+  font-weight: 400;
+  display: block;
+  color: #a9a9a9;
+  transition: 0.3s;
+  font-size: 21px;
+  letter-spacing: 1px;
+}
+.patreonsblock ul li:hover {
+  color: #fff;
+  background-color: #272727;
+}
+.patreonsblock ul li img {
+  width: 31px;
+  height: 31px;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+.worldslist {
+  margin-top: 20px;
+}
+.worldslist h3 {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.worldslist h3:before {
+  content: "★";
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 30px;
+  font-size: 23px;
+}
+.worldslist h3:after {
+  content: " ";
+  position: absolute;
+  top: 35px;
+  width: 80%;
+  height: 1px;
+  left: 0;
+  background: rgb(254, 254, 254);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 254, 254, 0.5) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.worldslist ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.worldslist ul li {
+  background-color: #000;
+  box-shadow: 0 4px 11px 0 #000;
+  margin-right: 20px;
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 10;
+  user-select: none;
+}
+.worldslist ul li:hover {
+  z-index: 30;
+}
+
+.worldslist ul li:hover .worldinfo {
+  transform: translate3D(0, 0, 30px);
+}
+
+.worldcard {
+  transform-style: preserve-3d;
+}
+.worldinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 192px);
+  transition: 0.2s;
+  transform: translate3D(0, 0, 0);
+}
+.worldname {
+  font-size: 18px;
+  font-weight: bold;
+  color: #c76d00;
+  width: 256px;
+  margin-top: 4px;
+  padding: 0 10px;
+}
+.worlddesc {
+  color: #cdcdcd;
+  font-size: 14px;
+  line-height: 16px;
+  max-width: 256px;
+  margin: 3px 0 6px 0;
+  width: 256px;
+  padding: 0 10px;
+  flex: 1;
+}
+.vrchatlink {
+  display: inline-block;
+  position: relative;
+  background-image: url("/images/vrchat_logo_50.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 35px;
+}
+.chilloutvrlink {
+  display: inline-block;
+  position: relative;
+  background-image: url("/images/cvr_logo_52.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 35px;
+}
+.worldlinks {
+  text-align: center;
+  z-index: 55;
+  color: #cdcdcd;
+}
+.worldlinks a {
+  transition: 0.2s;
+  filter: brightness(0.5);
+  transform: scale(1);
+}
+.worldlinks a:hover {
+  filter: brightness(1);
+  transform: scale(1.1);
+}
+.adminblock h3 {
+  text-align: center;
+}
+.adminblock ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.adminblock ul li {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.adminblock .a_avatar {
+  flex-basis: 80px;
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  background-size: cover;
+  background-position: center;
+  transform: rotateY(0);
+  transition: 0.2s;
+}
+
+.adminblock ul li:hover .a_avatar {
+  transform: rotateY(180deg);
+}
+.adminblock .a_info {
+  flex-basis: calc(100% - 80px);
+}
+.adminblock .a_info .a_name {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+  padding-left: 8px;
+  color: #cdcdcd;
+}
+.adminblock .a_info .a_desc {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  padding-left: 8px;
+  line-height: 16px;
+  color: #eb8100;
+}
+.adminblock .a_info .a_desc span {
+  font-style: italic;
+  font-size: 14px;
+  color: #7e7e7e;
+}
+.discordblock {
+  margin-bottom: 20px;
+}
+.discord_big_button {
+  background-color: #2f3136;
+  border-radius: 10px;
+  width: 320px;
+  height: 67px;
+  padding-left: 67px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.discord_big_button a.discordjoinlink {
+  position: absolute;
+  right: 10px;
+  border-radius: 5px;
+  top: 9px;
+  color: #fff;
+  background-color: #3ba55d;
+  height: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  line-height: 50px;
+  text-decoration: none;
+  transition: 0.1s;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 1.2s;
+  filter: brightness(1.0);
+}
+.discord_big_button a.discordjoinlink:hover {
+/*  background-color: #2d7d46;*/
+  filter: brightness(1.5);
+  color: unset;
+}
+.discord_big_button .discordavatar {
+  position: absolute;
+  left: 10px;
+  border-radius: 10px;
+  top: 8px;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+}
+.guildName {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+.guildName span {
+  color: rgb(185, 187, 190);
+  font-size: 14px;
+}
+.guildName .menuicon {
+  fill: #7a84f5;
+}
+.guildName svg {
+  margin-top: -4px;
+}
+.powered {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: rgb(87, 87, 87);
+  background-color: #181818;
+  text-align: center;
+}
+/* PERSONAL PAGE */
+.personal-avatar {
+  border-radius: 100%;
+  width: 64px;
+  height: 64px;
+}
+/* ------------- */
+
+/* HOWTOVERIFY PAGE */
+.bigbottons-methods {
+  display: flex;
+  justify-content: center;
+  user-select: none;
+}
+.bigbottons-methods > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  background-color: #272727;
+  background: linear-gradient(
+    180deg,
+    rgba(39, 39, 39, 1) 0%,
+    rgba(11, 11, 11, 1) 100%
+  );
+  border-radius: 4px;
+  width: 180px;
+  height: 250px;
+  border-width: 1px;
+  border-color: #7e7e7e;
+  border-style: solid;
+  box-shadow: 2px 3px 0 1px #000000ba;
+  text-align: center;
+}
+.bigbottons-methods > div img {
+  width: 120px;
+}
+.bigbottons-methods > div:hover {
+  cursor: pointer;
+  background-color: #424242;
+  background: linear-gradient(
+    180deg,
+    rgba(103, 103, 103, 1) 0%,
+    rgba(11, 11, 11, 1) 100%
+  );
+}
+.bigbottons-methods > div > div {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+}
+.bigbottons-methods > div > div small {
+  font-size: 13px;
+  color: #f1b334;
+}
+.htf_back {
+  background-color: #272727;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: #7e7e7e;
+  border-style: solid;
+  box-shadow: 0 2px 6px #000;
+  padding: 6px 0;
+  display: block;
+  width: 100px;
+  text-align: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.htf_back svg {
+  margin-right: 8px;
+}
+.verf_man .verf_man_content {
+  padding: 16px 23px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #505050;
+  border-style: solid;
+  background-color: #181818;
+  font-size: 21px;
+  line-height: 25px;
+}
+.verf_man .verf_man_content h4 {
+  text-align: center;
+}
+.verf_man .verf_man_content a.channelid {
+  color: rgb(222, 224, 252);
+  background-color: rgba(88, 101, 242, 0.3);
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 1px 4px;
+  border-radius: 5px;
+}
+.verf_man .verf_man_content a.channelid:hover {
+  text-decoration: underline;
+}
+.verf_autorole {
+  color: rgb(0, 255, 241);
+  background-color: rgba(0, 255, 241, 0.1);
+  white-space: nowrap;
+  padding: 1px 4px;
+  border-radius: 5px;
+  transition: .8s;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.verf_person {
+  margin-bottom: 3px;
+}
+.verf_command {
+  background-color: rgb(47, 49, 54);
+  line-height: 31px;
+  white-space: nowrap;
+  padding: 2px 13px;
+  border-radius: 5px;
+  color: #cdcdcd;
+  font-weight: normal;
+  margin-bottom: 3px;
+  display: inline-block;
+}
+.verf_group_title {
+  color: #000;
+}
+.verf_group_owners {
+  padding: 4px 9px;
+  border-radius: 7px;
+  background-color: #ff9050;
+  color: #5c5c5c;
+  font-weight: bold;
+  margin-bottom: 10px;
+  max-width: 740px;
+}
+.verf_group_admins {
+  padding: 4px 9px;
+  border-radius: 7px;
+  background-color: #fadf00;
+  color: #5c5c5c;
+  font-weight: bold;
+  max-width: 740px;
+}
+.verf_group_owners a {
+  color: #5c5c5c;
+}
+.verf_group_admins a {
+  color: #5c5c5c;
+}
+.verf_group_owners a:hover {
+  color: #000;
+}
+.verf_group_admins a:hover {
+  color: #000;
+}
+/*  */
+.verf_avatar {
+  padding-right: 10px;
+}
+.verf_avatar img{
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+.verf_group_wrap{
+  max-width: 740px;
+  margin-bottom: 50px;
+}
+.verf_st > td{
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.verf_own_name {
+  color: #ff9050;
+}
+.verf_adm_name {
+  color: #fadf00;
+}
+.verf_discord {
+  padding: 0 20px;
+  font-size: 16px;
+}
+.verf_discordId {
+  padding: 0 20px;
+  font-size: 16px;
+}
+.verf_profile_link {
+  padding: 0 20px;
+}
+/*  */
+.attention_one b {
+  color: #ffff60;
+}
+.nomarginbottom {
+  margin-bottom: 0;
+}
+.paper_p {
+  color: #fb87ff;
+  background: linear-gradient(to right, #fb87ff 0%, #ff8aa5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  font-size: 20px;
+}
+/*  */
+.verf_instruct_wrap {
+  display: flex;
+  flex-direction: column;
+}
+.verf_instruct_block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.verf_instruct_block > div {
+  flex-basis: 50%;
+}
+/*  */
+.clickhere {
+  margin-top: 10px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  display: inline-block;
+  color: #838383;
+}
+.noavailable {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  color: #ed0000;
+}
+.small_requires {
+  font-size: 12px;
+  line-height: 16px;
+  display: inline-block;
+  color: #77bef5;
+}
+.vrchatinfo {
+  font-size: 23px;
+  line-height: 28px;
+}
+.stepnumber {
+    font-weight: 900;
+    font-size: 45px;
+}
+.verf_profile_link .profilediscordicon{
+  display: none;
+  width: 21px;
+  height: 21px;
+  object-fit: contain;
+  opacity: 0.5;
+}
+.verf_profile_link .profilediscordicon:hover{
+  opacity: 1;
+}
+/* ------------- */
+
+/* Who can verify */
+.whocanverify-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1em;
+}
+.whocanverify-item {
+  display: flex;
+  background-color: #1d2124;
+  outline-color: rgba(0,0,0,0);
+  transition: 1s;
+  border-radius: 5px;
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  width: min(16em, 100%);
+  outline: 1px solid transparent;
+}
+.whocanverify-item:hover{
+  outline: 1px solid #d39e00;
+}
+.wv-right {
+  padding: 7px 10px 7px 80px;
+}
+/* */
+@media (max-width: 1400px) {
+  .topmenu ul {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 371px;
+    justify-content: center;
+    align-items: center;
+  }
+  .topmenu ul li {
+    margin: 1px;
+  }
+}
+@media (max-width: 991px) {
+  .verf_man .verf_man_content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  ol.breadcrumb {
+    padding-left: 23px;
+  }
+  .page-content {
+    padding: 1em 0;
+    background: transparent;
+  }
+  .verf_man .verf_man_content {
+    background-color: transparent;
+    border: none;
+  }
+
+  .inside-content {
+    padding: 0;
+  }
+  .content-wrap {
+    margin-top: 72px;
+  }
+  .page-content {
+    padding: 20px 0;
+  }
+  .page-content h1 {
+    text-align: center;
+    padding: 0 15px;
+  }
+  .page-content .sitedescription {
+    text-align: center;
+    padding: 0 15px;
+    font-size: 16px;
+  }
+  .topline {
+    display: none;
+  }
+  .page-content h1 {
+    font-size: 21px;
+  }
+  .worldslist ul li {
+    display: flex;
+    width: 100%;
+    margin: 0 0 13px;
+  }
+  .worldinfo {
+    height: calc(100% - 76px);
+  }
+  .worldimage img {
+    width: 108px; /*256px*/
+    height: 76px; /*192px*/
+  }
+  .worldname {
+    font-size: 13px;
+  }
+  .worlddesc {
+    font-size: 11px;
+    margin-bottom: 0;
+  }
+  .worlddesc p {
+    margin-bottom: 0;
+  }
+  .worldlinks {
+    display: none;
+  }
+  .mainpagelayout .mp_left {
+    flex-basis: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .mainpagelayout .mp_right {
+    flex-basis: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .discord_big_button {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 730px) {
+  .verf_instruct_block > div {
+    flex-basis: 100%;
+  }
+  /*  */
+  .verf_avatar {
+    padding-right: 4px;
+  }
+  .verf_avatar img{
+    width: 22px;
+    height: 22px;
+  }
+  .verf_own_name {
+    font-size: 12px;
+  }
+  .verf_adm_name {
+    font-size: 12px;
+  }
+  .verf_discord {
+    font-size: 12px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .verf_discordId {
+    font-size: 12px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .verf_profile_link {
+    font-size: 12px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .verf_profile_link .profiletext{
+    display: none;
+  }
+  .verf_profile_link .profilediscordicon{
+    display: inline-block;
+  }
+  /*  */
+  .verf_man .verf_man_content {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 901px) {
+  .mobilevisible {
+    display: none;
+  }
+  .topline_mobile {
+    display: none !important;
+  }
+}
